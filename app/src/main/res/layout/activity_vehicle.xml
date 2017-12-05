@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:backgroundTint="@android:color/holo_green_dark"
+    android:orientation="vertical"
+    tools:context="com.example.geetajain.automobile.Vehicle">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip">
+
+
+        <TextView
+            android:id="@+id/tvVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_car"
+            android:drawableRight="@drawable/ic_car"
+            android:layout_marginBottom="15dp"
+            android:text="Vehicle Detail"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvMake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:inputType="textCapSentences"
+            android:maxLength="20" />
+
+
+
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:inputType="textCapSentences"
+            android:maxLength="20" />
+
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:inputType="textCapSentences"
+            android:maxLength="20" />
+
+        <TextView
+            android:id="@+id/tvVin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vin"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtVin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:inputType="textCapSentences"
+            android:maxLength="20" />
+
+
+        <TextView
+            android:id="@+id/tvTankSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tank Size"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtTankSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:digits="0123456789.,"
+            android:inputType="numberDecimal" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FuelType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="7dp"
+                android:text="Fuel Type"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/black"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerFuelType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray"
+                android:entries="@array/fuel_type"
+                android:padding="7dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:orientation="horizontal"
+        android:padding="15dip">
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/darker_gray"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/darker_gray"
+            android:text="Cancle" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
